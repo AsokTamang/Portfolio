@@ -8,6 +8,12 @@ const page = () => {
     <Navbar/>
       <Home/>
       {/**about */}
+      
+      <section className="min-h-screen"></section>
+      <section className="min-h-screen"></section>
+      <section className="min-h-screen"></section>
+      <section className="min-h-screen"></section>
+      <section className="min-h-screen"></section>
       {/**projects */}
       {/**experience */}
       {/**testimonial */}

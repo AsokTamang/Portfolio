@@ -1,4 +1,12 @@
+"use client"
+import {motion, useScroll,useTransform } from "motion/react"
 export default function Paraller() {
+    const {scrollYProgress}=useScroll();
+    const mountain3Y=useTransform(scrollYProgress,[0,0.5],['0%','70%']);
+    const planetsX=useTransform(scrollYProgress,[0,0.5],['0%','-20%']);
+     const mountain2Y=useTransform(scrollYProgress,[0,0.5],['0%','30%']);
+    const mountain1Y=useTransform(scrollYProgress,[0,0.5],['0%','0%']);
+
   return (
     <section className="absolute inset-0 bg-black/40">
       <div className="relative h-screen overflow-y-hidden">
@@ -10,33 +18,38 @@ export default function Paraller() {
             backgroundSize:'cover'
         }} />
         {/**mountain layer 3 */}
-        <div 
+        <motion.div 
         className="absolute inset-0 -z-40"
-        style={{backgroundImage:'url(/mpuntain-3.png)',
+        style={{backgroundImage:'url(/mountain-3.png)',
               backgroundPosition:'bottom',
-            backgroundSize:'cover'
-        }}/>
+            backgroundSize:'cover',
+             y:mountain3Y
+        }}
+       />
         {/**planets*/}
-       <div 
+       <motion.div 
         className="absolute inset-0 -z-30"
         style={{backgroundImage:'url(/planets.png)',
               backgroundPosition:'bottom',
-            backgroundSize:'cover'
+            backgroundSize:'cover',
+            x:planetsX
         }}/>
         {/**mountain layer 2 */}
-       <div 
+       <motion.div 
         className="absolute inset-0 -z-20"
-        style={{backgroundImage:'url(/mpuntain-2.png)',
+        style={{backgroundImage:'url(/mountain-2.png)',
               backgroundPosition:'bottom',
-            backgroundSize:'cover'
+            backgroundSize:'cover',
+            y:mountain2Y
         }}/>
-        <div 
+        <motion.div 
         className="absolute inset-0 -z-10"
-        style={{backgroundImage:'url(/mpuntain-1.png)',
+        style={{backgroundImage:'url(/mountain-1.png)',
               backgroundPosition:'bottom',
-            backgroundSize:'cover'
+            backgroundSize:'cover',
+            y:mountain1Y
         }}/>
-        <div />
+        <motion.div />
       </div>
     </section>
   );
