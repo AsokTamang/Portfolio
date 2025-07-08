@@ -13,6 +13,16 @@ export function Frameworks() {
     "stripe.svg",
     "threejs.svg",
     "vitejs.svg",
+    "express.svg",
+    "tailwindcss.svg",
+    " ",
+    "Bootstrap_logo.svg",
+    "ts.svg",
+    "mongoose.png",
+    
+    
+
+    
 
 
   ];

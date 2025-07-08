@@ -1,6 +1,7 @@
 "use client"
 import { FlipWords } from "./flip-words";
 import { motion } from "motion/react";
+
 export default function Herotext() {
   const variants = {  //this variants is of opacity and delay for the elements 
     hidden: { opacity: 0, x: -50 },

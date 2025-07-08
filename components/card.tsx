@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import React from "react";
-export default function Card({
+export default function Card({   //these are the props we pass from about page
   style,
   text,
   image,
@@ -14,7 +14,7 @@ export default function Card({
 }) {
   return (
     <>
-      {image && !text ? (
+      {(image && !text) ? (
         <motion.img
           className="absolute w-15 cursor-grab"
           src={image}

@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/sections/nabar";
 import Home from "./home/page";
 import About from "./about/page";
+import Projects from "./projects/page";
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
       {/**about */}
 
       <About />
+      <Projects/>
       <section className="min-h-screen"></section>
       <section className="min-h-screen"></section>
       <section className="min-h-screen"></section>
