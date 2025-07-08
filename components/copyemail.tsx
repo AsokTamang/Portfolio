@@ -16,6 +16,8 @@ export default function Copyemail() {
     <motion.button
       onClick={handleClick}
       className="relative px-1 py-4 text-sm text-center rounded-full font-extralight bg-primary w-[12rem] cursor-pointer overflow-hidden"
+    whileHover={{scale:1.2}}
+    whileTap={{y:-8}}
     >
       <AnimatePresence mode="wait">
         {copied ? (

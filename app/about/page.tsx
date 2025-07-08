@@ -3,6 +3,7 @@ import Card from "@/components/card";
 import { useRef } from "react";
 import { Globe } from "@/components/globe";
 import Copyemail from "@/components/copyemail";
+import { Frameworks } from "@/components/frameworks";
 export default function About() {
   const grid2Container = useRef<HTMLDivElement>(null);
   return (
@@ -84,20 +85,32 @@ export default function About() {
               I'm based in Canada, and open to remote work worldwide
             </p>
             <figure className="absolute left-[25%] top-[7%]">
-          <Globe/>
-
+              <Globe />
             </figure>
           </div>
         </div>
 
         <div className="grid-special-color grid-4">
-            <div className="flex flex-col items-center justify-center gap-4 size-full">
-                <p className=" text-center headtext">Do you want to start a project together?</p>
-                <Copyemail/>
-            </div>
+          <div className="flex flex-col items-center justify-center gap-4 size-full">
+            <p className=" text-center headtext">
+              Do you want to start a project together?
+            </p>
+            <Copyemail />
+          </div>
         </div>
 
-        <div className="grid-default-color grid-5"></div>
+        <div className="grid-default-color grid-5">
+          <div className="z-10 w-[50%]">
+            <p className="headtext">Tech stack </p>
+            <p className="subtext">
+              I specialize in variety of languages, frameworks, and tools that
+              allow me to build robust and scalable softwares.
+            </p>
+          </div>
+          <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
+            <Frameworks />
+          </div>
+        </div>
       </div>
     </section>
   );
