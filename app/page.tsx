@@ -1,15 +1,16 @@
 import React from "react";
 import Navbar from "@/sections/nabar";
-import Home from "@/sections/hero";
+import Home from "./home/page";
+import About from "./about/page";
 
 const page = () => {
   return (
     <div className="container mx-auto max-w-7xl">
-    <Navbar/>
-      <Home/>
+      <Navbar />
+      <Home />
       {/**about */}
-      
-      <section className="min-h-screen"></section>
+
+      <About />
       <section className="min-h-screen"></section>
       <section className="min-h-screen"></section>
       <section className="min-h-screen"></section>
