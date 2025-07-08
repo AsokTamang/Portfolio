@@ -3,17 +3,15 @@ export const myProjects = [
   id: 1,
   title: "Sharity",
   description:
-    "Sharity is a full-stack community platform that enables users to share unused items through a secure, scalable system. It includes user authentication with JWT, item management with MongoDB, real-time chat, and a responsive UI.",
+    "Sharity is a full-stack app for sharing unused items, featuring JWT auth, MongoDB data management, real-time chat, and a responsive UI.",
   subDescription: [
     "Built with Next.js (TypeScript) for server-side rendering and seamless frontend-backend integration.",
     "Implemented user authentication using custom JWT tokens for secure and stateless sessions.",
     "Managed data persistence with MongoDB and Mongoose ODM for flexible schema design.",
     "Enabled real-time chat functionality using Socket.io.",
-    "Handled forms and validation with React Hook Form and Zod.",
-    "Styled the UI using Tailwind CSS for a modern and responsive user experience.",
-    "Configured ESLint and Prettier for consistent code style and quality.",
+    
   ],
-  href: "https://github.com/AsokTamang/Sharity",
+  href: "https://sharity-production.up.railway.app/",
   logo: "/assets/logos/sharity-logo.svg",
   image: "/sharity.png",
   tags: [
@@ -21,7 +19,7 @@ export const myProjects = [
     { id: 2, name: "TypeScript", path: "/ts.svg" },
     { id: 3, name: "Mongoose", path: "/mongoose.png" },
     { id: 4, name: "JWT", path: "jwt.jpg" },
-    { id: 5, name: "Socket.io", path: "/socketio.jpg" },
+    { id: 5, name: "Socket.io", path: "/socket.jpg" },
     { id: 6, name: "Tailwind CSS", path: "/tailwindcss.svg" },
   ],
 },
@@ -29,18 +27,16 @@ export const myProjects = [
   id: 2,
   title: "DealHunt",
   description:
-    "DealHunt is a full-stack web app that helps users discover, share, and track the best online deals. It features secure authentication via Google OAuth, deal posting and management, tagging, responsive UI, and advanced search powered by Google Custom Search Engine API.",
+"DealHunt is a full-stack app for finding and sharing online deals, with Google OAuth, tagging, and custom search integration.",
+
   subDescription: [
     "Built with Next.js (TypeScript) using API routes for backend functionality.",
     "Implemented authentication using Auth.js (NextAuth) with Google OAuth provider for seamless login.",
     "Used MongoDB and Mongoose ODM for flexible and scalable data storage.",
     "Integrated Google Custom Search Engine API in the backend to enhance deal search capabilities.",
-    "Created a tagging system and search features for efficient deal categorization and filtering.",
-    "Handled forms and validation with React Hook Form and Zod.",
-    "Styled UI with Tailwind CSS for a modern, responsive design.",
-    "Configured ESLint and Prettier for consistent code quality and formatting.",
+    
   ],
-  href: "https://github.com/AsokTamang/dealhunt",
+  href: "https://dealhunt-brown.vercel.app/",
   logo: "/assets/logos/dealhunt.svg",
   image: "/dealhunt.png",
   tags: [
@@ -61,12 +57,8 @@ export const myProjects = [
     "Developed using Next.js (TypeScript) for server-side rendering and seamless frontend-backend integration.",
     "Implemented authentication with Auth.js (NextAuth) using Github OAuth provider for secure login.",
     "Used MongoDB with Mongoose ODM for storing user data and mental health records.",
-    "Built interactive charts and data visualizations to track user progress and mental health metrics.",
-    "Handled form management and validation with React Hook Form and Zod.",
-    "Styled the interface with Tailwind CSS for a clean, accessible, and responsive design.",
-    "Configured ESLint and Prettier to maintain consistent code quality and style.",
   ],
-  href: "https://github.com/AsokTamang/MindTrek",
+  href: "https://mind-trek-two.vercel.app/",
   logo: "/assets/logos/mindtrek-logo.svg",
   image: "/mindtrek.png",
   tags: [
