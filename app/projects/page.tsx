@@ -15,7 +15,7 @@ export default function Projects() {
   };
 
   return (
-    <section
+    <section id="projects"
       onMouseMove={handleMouseMove}
       className="relative c-space section-spacing"
     >

@@ -6,7 +6,7 @@ export default function Testimonial() {
   const firstRow = reviews.slice(0, reviews.length / 2);
   const secondRow = reviews.slice(reviews.length / 2);
   return (
-    <div className="mt-3 ">
+    <div id="testimonial" className="mt-3 ">
       <div className="flex items-start mt-3 c-space">
         <h3 className="text-heading">Here from my clients</h3>
       </div>

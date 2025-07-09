@@ -1,4 +1,6 @@
 "use client";
+import { Particles } from "@/components/magicui/particles";
+
 import toast from "react-hot-toast";
 import { statesStore } from "@/store/states";
 import { AnimatePresence } from "motion/react";
@@ -71,7 +73,7 @@ export default function Contact() {
         </div>
 
         <button
-          className="mt-0.5 bg-radial from-lavender to-royal w-full text-lg p-2"
+          className="mt-0.5 bg-radial from-lavender to-royal w-full text-lg p-2 hover:animate-bounce cursor-pointer"
           type="submit"
         >
           Send
@@ -83,8 +85,16 @@ export default function Contact() {
 
   return (
     <>
-      <section className="relative flex items-center c-space section-spacing">
+     
+      <section id="contact" className="relative flex  flex-col items-center c-space section-spacing">
+      
         <div className="max-w-md flex flex-col items-center justify-center p-5 mx-auto border border-white/10 rounded-2xl bg-primary ">
+                <Particles
+         className="absolute inset-0 -z-80"
+          quantity={100}
+        ease={80}
+        color={'#ffffff'}
+      />
           <h2 className="text-heading">Let's talk</h2>
           <p className="font-normal text-neutral-400">
             Whether you're looking for building a fast,secure and scalable
@@ -92,8 +102,8 @@ export default function Contact() {
             your company's unique ideas into life, I'm available to work.
           </p>
           <button
-            onClick={() => setOpen(true)}
-            className="mt-0.5 bg-radial from-lavender to-royal w-full text-lg p-2"
+            onClick={() => !open?setOpen(true):setOpen(false)}
+            className="mt-0.5 bg-radial from-lavender to-royal w-full text-lg p-2 hover:animate-bounce cursor-pointer "
           >
             Contact me
           </button>
