@@ -31,7 +31,23 @@ export default function RootLayout({
       >
         <Navbar/>
         {children}
-          <Toaster />
+          <Toaster  
+          toastOptions={{
+            success:{
+              style:{
+                backgroundColor:'#4169e1',
+                 color:'#c2b280'
+
+              }
+            }
+            ,
+            error:{
+              style:{
+                backgroundColor:'#4169e1',
+                color:'red'
+              }
+            }
+          }} />
       </body>
     </html>
   );
