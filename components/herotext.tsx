@@ -29,7 +29,7 @@ export default function Herotext() {
             transition={{ delay: 1.3 }}
             className="text-2xl font-medium text-neutral-300"
           >
-            A Developer Dedicated to solving problems and crafting.
+            A Fullstack-Developer Dedicated to solving problems and crafting.
           </motion.p>
           <motion.div
             variants={variants}

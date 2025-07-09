@@ -37,42 +37,50 @@ export default function About() {
             </p>
             <Card
               style={{ rotate: "75deg", top: "30%", left: "20%" }}
+              image={null}
               text="GRASP"
               containerRef={grid2Container} //so we pass the containerRef with value grid2Container as a prop
             />
             <Card
               style={{ rotate: "-30deg", top: "60%", left: "45%" }}
               text="SOLID"
+              image={null}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "90deg", bottom: "30%", left: "70%" }}
+              image={null}
               text="Design Patterns"
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "55%", left: "0%" }}
               text="Design Principles"
+              image={null}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "20deg", top: "10%", left: "38%" }}
               text="SRP"
+              image={null}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "30deg", top: "70%", left: "70%" }}
               image="/html5.svg"
+              text={null}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "70%", left: "25%" }}
               image="/dotnet.svg"
+              text={null}
               containerRef={grid2Container}
             />
             <Card
               style={{ rotate: "-45deg", top: "5%", left: "10%" }}
               image="/nextjs.svg"
+              text={null}
               containerRef={grid2Container}
             />
           </div>

@@ -121,14 +121,14 @@ export const experiences = [
 ;
 export const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
+    name: "Kul",
+    username: "kulbdr@gmail.com",
     body: "I've never seen anything like this before. It's amazing. I love it.",
     img: "https://robohash.org/jack",
   },
   {
-    name: "Jill",
-    username: "@jill",
+    name: "Priya",
+    username: "Priya11@gmail.com",
     body: "I don't know what to say. I'm speechless. This is amazing.",
     img: "https://robohash.org/jill",
   },
