@@ -1,6 +1,6 @@
 "use client";
 import {motion} from 'motion/react'
-import Link from "next/link";
+import Link from 'next/link';
 interface tagType {
   id: number;
   name: string;
@@ -14,6 +14,7 @@ interface propsType {
   image: string;
   tags: tagType[];
   close: () => void;
+  setCursorBG:()=>void;
 }
 
 export default function ProjectDetails({
@@ -24,6 +25,7 @@ export default function ProjectDetails({
   image,
   href,
   close,
+  setCursorBG
 }: propsType) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">

@@ -1,5 +1,5 @@
 "use client";
-import { tr } from "motion/react-client";
+import { Dispatch, SetStateAction } from "react";
 import ProjectDetails from "./projectDetails";
 import React from "react";
 interface tagType {
@@ -14,6 +14,7 @@ interface propsType {
   href: string;
   image: string;
   tags: tagType[];
+  setCursorBG: Dispatch<SetStateAction<string | undefined>>;
 }
 export default function Project({
   title,
@@ -22,11 +23,16 @@ export default function Project({
   href,
   image,
   tags,
+  setCursorBG,
 }: propsType) {
   const [clicked, setClicked] = React.useState(false);
   return (
     <>
-      <div className="flex-wrap items-center py-10 justify-between space-y-14 sm:flex sm:space-y-0">
+      <div
+        onMouseEnter={() => setCursorBG(image)}    //here when the mouse enter this project detail then we set the cursorBG state with the image 
+        onMouseLeave={() => setCursorBG(undefined)}   //and when the mouse leaves then we set with undefined.
+        className="flex-wrap items-center py-10 justify-between space-y-14 sm:flex sm:space-y-0"
+      >
         <div>
           <p className="text-2xl">{title}</p>
           <div className="flex gap-5 mt-2 text-sand">
@@ -38,7 +44,7 @@ export default function Project({
 
         <button
           className="flex items-center gap-1 curosr-pointer hover:animate-bounce"
-          onClick={()=>setClicked(true)}
+          onClick={() => setClicked(true)}
         >
           Read More
           <img src={"/arrow-right.svg"} className="w-5" />
@@ -54,7 +60,10 @@ export default function Project({
           href={href}
           image={image}
           tags={tags}
-          close={()=>setClicked(false)}
+          close={() => setClicked(false)}
+          setCursorBG={function (): void {
+            throw new Error("Function not implemented.");
+          }}
         />
       )}
     </>
