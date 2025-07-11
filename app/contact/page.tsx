@@ -21,7 +21,7 @@ export default function Contact() {
 
       return;
     }
-  }, [state.result]);
+  }, [open,setOpen,state.result,state.succeeded]);
 
   const FormTable = () => (
     <motion.div
@@ -95,11 +95,11 @@ export default function Contact() {
         ease={80}
         color={'#ffffff'}
       />
-          <h2 className="text-heading">Let's talk</h2>
+          <h2 className="text-heading">Let&apos;s talk</h2>
           <p className="font-normal text-neutral-400">
-            Whether you're looking for building a fast,secure and scalable
+            Whether you&apos;re looking for building a fast,secure and scalable
             WebApp for your startup, improve your existing website, or bringing
-            your company's unique ideas into life, I'm available to work.
+            your company&apos;s unique ideas into life, I&apos;m available to work.
           </p>
           <button
             onClick={() => !open?setOpen(true):setOpen(false)}

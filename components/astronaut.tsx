@@ -5,7 +5,10 @@ import * as THREE from "three";
 import { useMotionValue, useSpring } from "motion/react";
 import { useFrame } from "@react-three/fiber";
 
-export function Astronaut(props: any) {
+export function Astronaut(props: {
+  scale:number|false;
+  position:[number,number,number]|false;
+}) {
   const group = useRef<THREE.Group>(null);
   const { nodes, materials, animations } = useGLTF(
     "/modal/tenhun_falling_spaceman_fanart.glb"

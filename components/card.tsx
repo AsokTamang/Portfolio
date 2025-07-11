@@ -8,7 +8,7 @@ export default function Card({   //these are the props we pass from about page
   containerRef,
 }: {
   style: React.CSSProperties;
-  text: string;
+  text: string|null;
   image: string | null;
   containerRef: React.RefObject<HTMLDivElement | null>;
 }) {

@@ -1,5 +1,6 @@
 'use client'
 import { twMerge } from "tailwind-merge";
+import Image from "next/image";
 
 export const ReviewCard = ({
   img,
@@ -12,6 +13,7 @@ export const ReviewCard = ({
   username: string;
   body: string;
 }) => {
+ 
 
   return (
     <figure
@@ -22,7 +24,8 @@ export const ReviewCard = ({
       )}
     >
       <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full bg-white" width="32" height="32" alt="" src={img} />
+        <Image className="rounded-full bg-white" width="32" height="32" alt="" src={img} />
+        
         <div className="flex flex-col">
           <figcaption className="text-sm font-medium text-white">
             {name}

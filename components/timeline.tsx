@@ -9,7 +9,7 @@ interface TimelineEntry {
 }
 
 export const Timeline = ({ data }:{data:TimelineEntry[]}) => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef(null);
   const [height, setHeight] = useState(0);
 

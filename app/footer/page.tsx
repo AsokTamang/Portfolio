@@ -1,6 +1,7 @@
 "use client";
 import { mySocials } from "@/constants";
 import Link from "next/link";
+import Image from "next/image";
 export default function Footer() {
   return (
   <section id="footer" className="flex flex-wrap items-center justify-between gap-5 pb-3 text-sm text-neutral-400 c-space">
@@ -13,7 +14,7 @@ export default function Footer() {
       <div className="flex gap-3">
         {mySocials.map((social, index) => (
           <Link href={social.href} key={index}>
-            <img src={social.icon} className="w-5 h-5" alt={social.name} />
+            <Image src={social.icon} className="w-5 h-5" alt={social.name} />
           </Link>
         ))}
       </div>

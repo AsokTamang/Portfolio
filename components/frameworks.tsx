@@ -1,5 +1,6 @@
-import { string } from "three/tsl";
+
 import { OrbitingCircles } from "./orbitingcircles";
+import Image from "next/image";
 
 export function Frameworks() {
   const skills = [
@@ -42,5 +43,5 @@ export function Frameworks() {
   );
 }
 const Icon = ({ src }: { src: string }) => (
-  <img src={src} className="duration-200 rounded-sm hover:scale-110" />
+  <Image alt="icon-image" src={src} className="duration-200 rounded-sm hover:scale-110" />
 );

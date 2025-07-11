@@ -1,6 +1,7 @@
 "use client";
 import {motion} from 'motion/react'
 import Link from 'next/link';
+import Image from 'next/image';
 interface tagType {
   id: number;
   name: string;
@@ -37,9 +38,9 @@ export default function ProjectDetails({
           onClick={close}
           className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500"
         >
-          <img src={"/close.svg"} className="w-6 h-6 " />
+          <Image alt='close-icon' src={"/close.svg"} className="w-6 h-6 " />
         </button>
-        <img src={image} alt="project image" className="w-full rounded-t-2xl" />
+        <Image src={image} alt="project image" className="w-full rounded-t-2xl" />
         <div className="p-3">
           <h5 className="mb-2 text-2xl font-bold text-white">{title}</h5>
           <p className="mb-3 text-neutral-300 font-light">{description}</p>
@@ -52,7 +53,7 @@ export default function ProjectDetails({
         <div className="flex items-center justify-between mt-4">
           <div className="flex justify-evenly gap-3">
             {tags.map((tag) => (
-              <img
+              <Image
                 key={tag.id}
                 className="rounded-lg size-10 hover:animate-bounce"
                 src={tag.path}
@@ -64,7 +65,7 @@ export default function ProjectDetails({
             href={href}
             className="inline-flex items-center gap-1 font-medium cursor-pointer hover-animation"
           >
-            View project <img className="size-4" src="/arrow-up.svg" />
+            View project <Image alt='arrow-icon' className="size-4" src="/arrow-up.svg" />
           </Link>
         </div>
       </motion.div>

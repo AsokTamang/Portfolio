@@ -1,6 +1,7 @@
 "use client";
 import Card from "@/components/card";
 import { useRef } from "react";
+import Image from "next/image";
 import { Globe } from "@/components/globe";
 import Copyemail from "@/components/copyemail";
 import { Frameworks } from "@/components/frameworks";
@@ -11,14 +12,15 @@ export default function About() {
       <h2 className="text-heading">About me</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
         <div className="flex items-end grid-default-color grid-1">
-          <img
+          <Image
+          alt="coding image"
             src={"/coding-pov.png"}
             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5] "
           />
           <div className="z-10">
-            <p className="headtext">Hi, I'm Asok Tamang.</p>
+            <p className="headtext">Hi, I&apos;m Asok Tamang.</p>
             <p className="subtext">
-              Hi, I’m Asok Tamang — a passionate full-stack developer with a
+              Hi, I am Asok Tamang — a passionate full-stack developer with a
               focus on building clean, responsive, and user-friendly web
               applications. I enjoy bringing ideas to life through code,
               combining thoughtful UI design with solid backend logic.
@@ -90,7 +92,7 @@ export default function About() {
           <div className="z-10 w-[50%]">
             <p className="headtext">Time Zone</p>
             <p className="subtext">
-              I'm based in Canada, and open to remote work worldwide
+              I&apos;m based in Canada, and open to remote work worldwide
             </p>
             <figure className="absolute left-[25%] top-[7%]">
               <Globe />

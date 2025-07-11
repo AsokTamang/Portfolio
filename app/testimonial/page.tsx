@@ -8,7 +8,7 @@ export default function Testimonial() {
   return (
     <div id="testimonial" className="mt-3 ">
       <div className="flex items-start mt-3 c-space">
-        <h3 className="text-heading">Here from my clients</h3>
+        <h3 className="text-heading">Hear from my clients</h3>
       </div>
       <div className="relative flex md:w-full flex-col mt-11 items-center justify-center overflow-hidden w-[30rem]">
         <Marquee pauseOnHover className="[--duration:10s]">

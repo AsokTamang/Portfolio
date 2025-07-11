@@ -2,6 +2,7 @@
 import { Dispatch, SetStateAction } from "react";
 import ProjectDetails from "./projectDetails";
 import React from "react";
+import Image from "next/image";
 interface tagType {
   id: number;
   name: string;
@@ -47,7 +48,7 @@ export default function Project({
           onClick={() => setClicked(true)}
         >
           Read More
-          <img src={"/arrow-right.svg"} className="w-5" />
+          <Image alt='arrow-right' src={"/arrow-right.svg"} className="w-5" />
         </button>
       </div>
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />{" "}

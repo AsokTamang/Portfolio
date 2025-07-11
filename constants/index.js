@@ -84,11 +84,7 @@ export const mySocials = [
     href: "https://www.linkedin.com/in/asok-tamang11/",
     icon: "/linkedIn.svg",
   },
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/asook_tamang/",
-    icon: "/instagram.svg",
-  },
+ 
 ];
 
 export const experiences = [
@@ -133,10 +129,10 @@ export const reviews = [
     img: "https://robohash.org/jill",
   },
   {
-    name: "John",
-    username: "@john",
+    name: "Bisal",
+    username: "Vishalkharel137@gmail.com",
     body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://robohash.org/john",
+    img: "/bisaldost.jpg",
   },
   {
     name: "Alice",

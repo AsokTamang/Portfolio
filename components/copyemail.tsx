@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { AnimatePresence, motion } from "motion/react";
+import Image from "next/image";
 export default function Copyemail() {
   const [copied, setCopied] = React.useState(false);
   const email = "ashoktmg205@gmail.com";
@@ -29,7 +30,7 @@ export default function Copyemail() {
             transition={{ duration: 0.2, ease: "easeInOut" }}
             key={"copied"}
           >
-            <img className="w-5" src={"/copy-done.svg"} alt="copy icon" />
+            <Image className="w-5" src={"/copy-done.svg"} alt="copy icon" />
             Email has been copied
           </motion.p>
         ) : (
@@ -41,7 +42,7 @@ export default function Copyemail() {
             transition={{ duration: 0.2 }}
             key={"copy"}
           >
-            <img className="w-5" src={"/copy.svg"} alt="copy icon" />
+            <Image className="w-5" src={"/copy.svg"} alt="copy icon" />
             Copy Email Address
           </motion.p>
         )}

@@ -19,7 +19,7 @@ export default function Herotext() {
           transition={{ delay: 1.1}}
           className="text-4xl font-medium"
         >
-          Hi, I'm Asok.
+          Hi, I&apos;m Asok.
         </motion.h1>
         <div className="flex flex-col items-start">
           <motion.p
@@ -65,7 +65,7 @@ export default function Herotext() {
           transition={{ delay: 1.1 }}
           className="text-4xl font-medium"
         >
-          Hi, I'm Asok.
+          Hi, I&apos;m Asok.
         </motion.p>
         <div>
           <motion.p
