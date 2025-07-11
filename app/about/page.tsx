@@ -15,6 +15,7 @@ export default function About() {
           <Image
           alt="coding image"
             src={"/coding-pov.png"}
+           
             className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5] "
           />
           <div className="z-10">

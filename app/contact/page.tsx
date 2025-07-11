@@ -21,7 +21,7 @@ export default function Contact() {
 
       return;
     }
-  }, [open,setOpen,state.result,state.succeeded]);
+  }, [state.result]);
 
   const FormTable = () => (
     <motion.div
