@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div id="top">
+
+<!-- HEADER STYLE: CLASSIC -->
+<div align="center">
+
+
+# PORTFOLIO
+
+<em>Unleashing Innovation, Inspiring the Future Today</em>
+
+<!-- BADGES -->
+<img src="https://img.shields.io/github/last-commit/AsokTamang/Portfolio?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+<img src="https://img.shields.io/github/languages/top/AsokTamang/Portfolio?style=flat&color=0080ff" alt="repo-top-language">
+<img src="https://img.shields.io/github/languages/count/AsokTamang/Portfolio?style=flat&color=0080ff" alt="repo-language-count">
+
+<em>Built with the tools and technologies:</em>
+
+<img src="https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white" alt="JSON">
+<img src="https://img.shields.io/badge/Markdown-000000.svg?style=flat&logo=Markdown&logoColor=white" alt="Markdown">
+<img src="https://img.shields.io/badge/npm-CB3837.svg?style=flat&logo=npm&logoColor=white" alt="npm">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black" alt="JavaScript">
+<img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat&logo=React&logoColor=black" alt="React">
+<img src="https://img.shields.io/badge/TypeScript-3178C6.svg?style=flat&logo=TypeScript&logoColor=white" alt="TypeScript">
+<img src="https://img.shields.io/badge/ESLint-4B32C3.svg?style=flat&logo=ESLint&logoColor=white" alt="ESLint">
+
+</div>
+<br>
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Testing](#testing)
+
+---
+
+## Overview
+
+Portfolio is a comprehensive developer toolkit designed to streamline the creation of stunning, interactive web applications. Built on Next.js with a focus on modern UI/UX, it offers a rich set of components, animations, and visual effects to craft engaging online portfolios.
+
+**Why Portfolio?**
+
+This project helps developers build visually compelling, maintainable websites with ease. The core features include:
+
+- 🎨 **🖍️ Customizable Design System:** Tailwind CSS configuration ensures a consistent aesthetic aligned with branding.
+- 🚀 **⚙️ Developer-Centric Configurations:** ESLint, TypeScript, and PostCSS setups promote code quality and streamlined workflows.
+- 🌐 **🌍 Interactive Visual Components:** 3D models, animated marquees, and dynamic backgrounds enhance user engagement.
+- 🔧 **🧩 Modular Architecture:** Reusable components like project cards, timelines, and loaders simplify development.
+- 🎯 **📈 Performance Optimization:** Image optimization and efficient build setups ensure fast, responsive experiences.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This project requires the following dependencies:
+
+- **Programming Language:** TypeScript
+- **Package Manager:** Npm
+
+### Installation
+
+Build Portfolio from the source and install dependencies:
+
+1. **Clone the repository:**
+
+    ```sh
+    ❯ git clone https://github.com/AsokTamang/Portfolio
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```sh
+    ❯ cd Portfolio
+    ```
+
+3. **Install the dependencies:**
+
+**Using [npm](https://www.npmjs.com/):**
+
+```sh
+❯ npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Run the project with:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Using [npm](https://www.npmjs.com/):**
 
-## Learn More
+```sh
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Testing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Portfolio uses the {__test_framework__} test framework. Run the test suite with:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Using [npm](https://www.npmjs.com/):**
 
-## Deploy on Vercel
+```sh
+npm test
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div align="left"><a href="#top">⬆ Return</a></div>
+
+---
